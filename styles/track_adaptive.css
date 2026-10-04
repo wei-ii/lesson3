@@ -1,0 +1,32 @@
+@media (max-width: 767px) {
+    .container {
+        padding: 100px 15px 40px 15px; /* Уменьшаем отступы на мобильных */
+    }
+
+    .track-content {
+        width: 100%;
+    }
+
+    .track-title {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .track-action {
+        padding: 15px;
+    }
+
+    .track-result-header {
+        padding: 15px;
+    }
+
+    .track-info {
+        padding: 15px;
+    }
+
+    .track-status-item:not(:last-child)::after {
+        left: 19px;
+        top: 40px;
+        bottom: -15px;
+    }
+}

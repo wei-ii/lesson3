@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>Отследить посылку</title>
+
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/base_adaptive.css" />
+
+    <link rel="stylesheet" href="styles/track.css" />
+    <link rel="stylesheet" href="styles/track_adaptive.css" />
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <a class="header-brand" href="./index.html">
+                <div class="header-logo">D</div>
+                <div class="header-title">Dostaffkin</div>
+            </a>
+            <nav class="header-menu">
+                <a class="header-link" href="./order.html">Оформить <span>доставку</span></a>
+                <a class="header-link" href="#">Отследить <span>посылку</span></a>
+            </nav>
+        </header>
+
+        <main class="track-content">
+
+            <section class="track-card track-search">
+                <div class="track-title">Отследить посылку</div>
+                <div class="track-action">
+                    <div class="main-field track-field">
+                        <input id="trackNumber" placeholder="Введите номер посылки" autocomplete="off" />
+                    </div>
+                    <button id="trackButton" class="button track-button" type="button">Отследить</button>
+                </div>
+            </section>
+
+            <section class="track-card track-result" id="trackResult">
+                <div class="track-result-header">
+                    <div class="track-id" id="trackId">—</div>
+                    <div class="track-routes">
+                        <div class="track-route">
+                            <div class="track-route-pin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="track-route-text">
+                                <div class="track-route-city">Москва</div>
+                                <div class="track-route-address">ул. Тверская, д. 1</div>
+                            </div>
+                        </div>
+                        <div class="track-route-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </div>
+                        <div class="track-route">
+                            <div class="track-route-pin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div class="track-route-text">
+                                <div class="track-route-city">Санкт-Петербург</div>
+                                <div class="track-route-address">Невский пр., д. 10</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="track-info">
+                    <div class="track-status">
+                        <div class="track-status-title">Текущий статус</div>
+                        <div class="track-status-list">
+                            <div class="track-status-item">
+                                <div class="track-status-icon created"></div>
+                                <div class="track-status-text">
+                                    <div class="track-status-name">Создана</div>
+                                    <div class="track-status-date">12.05.2026 10:00</div>
+                                </div>
+                            </div>
+                            <div class="track-status-item">
+                                <div class="track-status-icon in-way"></div>
+                                <div class="track-status-text">
+                                    <div class="track-status-name">В пути</div>
+                                    <div class="track-status-date">12.05.2026 14:30</div>
+                                </div>
+                            </div>
+                            <div class="track-status-item">
+                                <div class="track-status-icon ready"></div>
+                                <div class="track-status-text">
+                                    <div class="track-status-name">Готова к выдаче</div>
+                                    <div class="track-status-date">13.05.2026 09:15</div>
+                                </div>
+                            </div>
+                            <div class="track-status-item">
+                                <div class="track-status-icon done"></div>
+                                <div class="track-status-text">
+                                    <div class="track-status-name">Доставлена</div>
+                                    <div class="track-status-date">13.05.2026 16:00</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
